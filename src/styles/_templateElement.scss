@@ -1,0 +1,100 @@
+@mixin input(
+  $fontSize: 1.6rem,
+  $width,
+  $height: $width,
+  $borderradius,
+  $bordercolor,
+  $backgroundcolor
+) {
+  width: $width;
+  height: $height;
+  border-radius: $borderradius;
+  border: 1px solid $bordercolor;
+  background-color: $backgroundcolor;
+  font-size: $fontSize;
+  margin: 10px 0;
+  padding-left: 20px;
+
+  &:focus {
+    outline: none;
+  }
+}
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin box-shadow($x, $y, $blur, $color, $inset: false) {
+  @if $inset {
+    box-shadow: inset $x $y $blur $color;
+  } @else {
+    box-shadow: $x $y $blur $color;
+  }
+}
+@mixin transform($property) {
+  -ms-transform: $property;
+  transform: $property;
+}
+
+@mixin boder-radius($all: null, $tl: $all, $tr: $all, $btr: $all, $btl: $all) {
+  border-top-left-radius: $tl;
+  border-top-right-radius: $tr;
+  border-bottom-right-radius: $btr;
+  border-bottom-left-radius: $btl;
+}
+@mixin position($pos) {
+  position: absolute;
+  @if ($pos == "both") {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if($pos == "x") {
+    left: 50%;
+    transform: translateX(-50%);
+  } @else if($pos == "y") {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@mixin button($backgroundColor, $width, $height) {
+  font-size: 1.6rem;
+  width: $width;
+  height: $height;
+  font-size: 1.6rem;
+  color: white;
+  background-color: $backgroundColor;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+}
+@mixin flex($direction: row, $content: null, $items: null, $wrap: null) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $items;
+  flex-wrap: $wrap;
+}
+@mixin checkbox($size, $backgroundColor) {
+  width: $size;
+  height: $size;
+  position: relative;
+  z-index: 1;
+  appearance: none;
+  background-color: $backgroundColor;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+
+  &:after {
+    content: "\f00c";
+    font-family: "Font Awesome 5 free";
+    font-weight: 700;
+    display: block;
+    color: white;
+    @include position("both");
+    font-size: 2rem;
+
+    z-index: 0;
+  }
+  &.checked {
+    background-color: black;
+  }
+}

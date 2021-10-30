@@ -1,0 +1,100 @@
+@use "variable";
+.home,
+.skill,
+.project,
+.contact {
+  overflow: hidden;
+}
+.section__title {
+  margin: 100px 0 40px 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  & span {
+    width: 30px;
+    height: 3px;
+    background-color: var(--text-color);
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+
+.home-section__img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+.home-section__img {
+  // width: 400px;
+  // height: 400px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  cursor: pointer;
+  transform: translateX(-50%);
+  animation: slide 2s cubic-bezier(0.19, 0.135, 0.15, 0.86);
+  transition: all 0.6s cubic-bezier(0.19, 0.135, 0.15, 0.86);
+}
+
+.intro-wrapper {
+  position: relative;
+  height: 13rem;
+  overflow: hidden;
+  margin-bottom: 15px;
+
+  align-items: center;
+  &__name,
+  &__major {
+    font-size: 10rem;
+    font-family: "Old Standard TT", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 14rem;
+    position: absolute;
+    top: 0;
+
+    animation: slide 2s cubic-bezier(0.19, 0.135, 0.15, 0.86);
+    img {
+      position: relative;
+      height: 9rem;
+      top: 8px;
+    }
+  }
+  &__major {
+    position: absolute;
+    top: 0;
+
+    font-size: 5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+
+    margin-top: 1rem;
+  }
+  &__name::selection,
+  &__major::selection {
+    color: tomato;
+    background-color: variable.$LIGHT__TEXT__COLOR;
+  }
+}
+
+@keyframes slide {
+  from {
+    top: 150%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes infiniteUpDown {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 15%;
+  }
+  100% {
+    top: 0;
+  }
+}
