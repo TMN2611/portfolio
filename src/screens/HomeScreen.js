@@ -1,4 +1,4 @@
-import { React, useEffect, useState, useLayoutEffect, useRef } from "react";
+import { React, useEffect, useState } from "react";
 import RectangularButton from "../component/UI/Buttons/RectangularButton";
 import COLOR from "../contants/color";
 
@@ -65,6 +65,7 @@ export default function HomeScreen({ urlSesstionImg }) {
                     src={urlSesstionImg}
                     className="home-section__img"
                     onClick={handleZoomImage}
+                    alt="moon or sun"
                   />
                 </div>
               </div>

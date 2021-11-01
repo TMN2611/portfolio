@@ -1,10 +1,10 @@
-import { React, useEffect, useState, memo } from "react";
+import { React, memo } from "react";
 import { Link } from "react-router-dom";
 import COLOR from "../contants/color";
 import RectangularButton from "./UI/Buttons/RectangularButton";
 import Switch from "@mui/material/Switch";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import Icon from "@mui/material/Icon";
+
 import { styled } from "@mui/material/styles";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({

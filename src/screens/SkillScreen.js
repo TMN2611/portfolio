@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import SkillTable from "../component/SkillTable";
 const dataSkill = [
   {
