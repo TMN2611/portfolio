@@ -4,7 +4,7 @@ import COLOR from "../contants/color";
 import RectangularButton from "./UI/Buttons/RectangularButton";
 import Switch from "@mui/material/Switch";
 import FormControlLabel from "@mui/material/FormControlLabel";
-
+import Icon from "@mui/material/Icon";
 import { styled } from "@mui/material/styles";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
@@ -53,16 +53,16 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     borderRadius: 20 / 2,
   },
 }));
-function Navigation({ handleToggle }) {
+function Navigation({ handleToggle, handleToggleNav }) {
   useEffect(() => {
     console.log("nav re-render");
   });
   return (
     <nav className="nav">
-      <Link to="/">
-        <img src={"/images/logo.png"} alt="logo" className="nav__logo" />
+      <Link to="/" className="hiddenOnMobileAndeTablet">
+        <img src={"/images/logo.png"} alt="logo" className="nav__logo " />
       </Link>
-      <ul className="nav__list">
+      <ul className="nav__list hiddenOnMobile">
         <li className="nav__item">
           <Link to="/" className="nav__link">
             Giới thiệu
@@ -84,11 +84,21 @@ function Navigation({ handleToggle }) {
           </Link>
         </li>
       </ul>
+
+      {/* Nav mobile */}
+      <div
+        className="nav-bars hiddenOnPc hiddenOnTablet"
+        onClick={handleToggleNav}
+      >
+        <i className="nav-bars-icon fas fa-bars"></i>
+      </div>
+
       <RectangularButton
         size="large"
         buttonTitle="Liên hệ"
         mainColor={COLOR.RED}
         linkAdress={"/contact"}
+        classAdd={"hiddenOnMobileAndeTablet"}
       />
       <FormControlLabel
         style={{ marginLeft: 40 }}

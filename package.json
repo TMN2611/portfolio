@@ -19,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sass-start": "sass ./src/styles/base.scss:./src/styles/base.css ./src/styles/main.scss:./src/styles/main.css ./src/styles/responsive.scss:./src/styles/responsive.css --watch"
   },
   "eslintConfig": {
     "extends": [

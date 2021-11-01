@@ -3,4 +3,42 @@
   html {
     height: calc(100% + 10px);
   }
+  .hiddenOnPc {
+    display: none;
+  }
+}
+/* >= Tablet */
+@media (min-width: 740px) and( max-width:1023px) {
+  .hiddenOnTablet {
+    display: none;
+  }
+}
+//  Mobile
+@media (max-width: 739px) {
+  .hiddenOnMobile {
+    display: none;
+  }
+  .displayOnMobile {
+  }
+  #root {
+    padding: 0 15px;
+  }
+  .nav {
+    justify-content: space-between;
+    position: relative;
+  }
+  .nav__item {
+    text-align: start;
+  }
+  .nav__list-mobile {
+    margin-top: 20px;
+  }
+}
+
+// Moblie and Tablets
+
+@media screen and (max-width: 1023px) {
+  .hiddenOnMobileAndeTablet {
+    display: none;
+  }
 }

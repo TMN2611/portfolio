@@ -1,5 +1,5 @@
 import { React, useEffect, useState, useLayoutEffect, useRef } from "react";
-// import RectangularButton from "../component/UI/Buttons/RectangularButton";
+import RectangularButton from "../component/UI/Buttons/RectangularButton";
 import COLOR from "../contants/color";
 
 export default function HomeScreen({ urlSesstionImg }) {
@@ -22,7 +22,7 @@ export default function HomeScreen({ urlSesstionImg }) {
 
     // homeImg.style.animationIterationCount = "infinite";
     setTimeout(() => {
-      homeImg.style.animation = "infiniteUpDown 4.9s infinite";
+      homeImg.style.animation = "infiniteUpDown 9s infinite";
     }, 3000);
   }, []);
 
@@ -70,6 +70,12 @@ export default function HomeScreen({ urlSesstionImg }) {
               </div>
             </div>
           </div>
+          <RectangularButton
+            size="large"
+            buttonTitle="Liên hệ"
+            mainColor={COLOR.RED}
+            linkAdress={"/contact"}
+          />
         </div>
       </div>
     </div>

@@ -106,6 +106,9 @@ html {
   margin-top: 20px;
 
   &__list {
+    &-mobile {
+      list-style: none;
+    }
     display: flex;
     flex: 1;
     justify-content: center;
@@ -133,6 +136,13 @@ html {
       }
     }
   }
+  &-bars {
+    padding: 5px;
+  }
+  &-bars-icon {
+    font-size: 2rem;
+    cursor: pointer;
+  }
 
   &__link {
     padding: 10px 20px;
@@ -143,11 +153,67 @@ html {
     font-weight: 700;
   }
 }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+
+  &__overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+  }
+  &__body {
+    position: relative;
+    z-index: 1;
+    width: 70%;
+    height: 100%;
+    background-color: var(--background-color);
+    left: -100%;
+    transition: left 1s cubic-bezier(0.19, 0.135, 0.15, 0.86);
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.modal.modal-nav {
+  display: none;
+}
 @keyframes inCreaseWidtd {
   from {
     width: 0px;
   }
   to {
     width: 100%;
+  }
+}
+@keyframes slideLeftToRight {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes fideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fideOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }

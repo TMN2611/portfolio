@@ -6,11 +6,12 @@ export default function RectangularButton({
   mainColor,
   linkAdress,
   handleClick,
+  classAdd,
 }) {
   const Component = linkAdress ? Link : "button";
   return (
     <Component
-      className={`btn btn-${size}`}
+      className={`btn btn-${size} ${classAdd}`}
       style={{ borderColor: mainColor }}
       to={linkAdress}
       onClick={handleClick}
