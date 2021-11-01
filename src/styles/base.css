@@ -2,8 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --background-color: #f0f2f5;
+  --background-color-20: #a594945d;
   --text-color: #050505;
-  --primary-color: #fff8b5;
+  --skill-text-header-color: #242628;
   --blue-color: #1877f2;
   --red-color: #ea4335;
   --gem-color: #08fdd8;
@@ -25,7 +26,8 @@ html {
 
 .dark-mode {
   --background-color: #1d1d1d;
-  --primary-color: #fff8b5;
+  --background-color-20: #f0f2f53f;
+  --skill-text-header-color: #fff8b5;
   --text-color: #f0f2f5;
 }
 
@@ -128,7 +130,7 @@ html {
   background-color: var(--red-color);
 }
 .nav-bars {
-  padding: 5px;
+  padding: 15px;
 }
 .nav-bars-icon {
   font-size: 2rem;
@@ -205,6 +207,32 @@ html {
   }
   to {
     opacity: 0;
+  }
+}
+@keyframes slide {
+  from {
+    top: 150%;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes infiniteUpDown {
+  0% {
+    top: 0;
+    left: 50%;
+  }
+  30% {
+    top: 15%;
+    left: 60%;
+  }
+  60% {
+    top: 30%;
+    left: 40%;
+  }
+  100% {
+    top: 0;
+    left: 50%;
   }
 }
 

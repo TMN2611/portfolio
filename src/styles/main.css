@@ -72,31 +72,33 @@
   background-color: #050505;
 }
 
-@keyframes slide {
-  from {
-    top: 150%;
-  }
-  to {
-    top: 0;
-  }
+.skill-table {
+  padding: 40px 40px 60px;
+  border: 1px solid var(--background-color-20);
+  box-shadow: 0 2px 6px var(--background-color-20);
+  border-radius: 10px;
 }
-@keyframes infiniteUpDown {
-  0% {
-    top: 0;
-    left: 50%;
-  }
-  30% {
-    top: 15%;
-    left: 60%;
-  }
-  60% {
-    top: 30%;
-    left: 40%;
-  }
-  100% {
-    top: 0;
-    left: 50%;
-  }
+.skill-table__header {
+  text-align: center;
+  font-size: 3.6rem;
+  color: var(--skill-text-header-color);
+  margin: 30px;
+}
+.skill-table__list {
+  list-style: none;
+}
+.skill-table__item {
+  margin-bottom: 25px;
+}
+.skill-table__item__type {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--skill-text-header-color);
+}
+.skill-table__item__list {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=main.css.map */

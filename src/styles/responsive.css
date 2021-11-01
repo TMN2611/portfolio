@@ -12,6 +12,17 @@
   .hiddenOnTablet {
     display: none;
   }
+
+  .skill-table {
+    padding: 30px 20px 40px;
+  }
+  .skill-table__item__type {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  .skill-table__item__list {
+    font-size: 1.4rem;
+  }
 }
 @media (max-width: 739px) {
   .hiddenOnMobile {
@@ -35,6 +46,15 @@
     margin-top: 20px;
   }
 
+  .skill-table {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .hiddenOnMobileAndeTablet {
+    display: none;
+  }
+
   .intro-wrapper {
     height: 8rem;
   }
@@ -48,11 +68,6 @@
   .intro-wrapper__major {
     font-size: 3rem;
     line-height: 8rem;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .hiddenOnMobileAndeTablet {
-    display: none;
   }
 }
 

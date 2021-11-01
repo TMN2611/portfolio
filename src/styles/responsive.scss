@@ -12,6 +12,16 @@
   .hiddenOnTablet {
     display: none;
   }
+  .skill-table {
+    padding: 30px 20px 40px;
+    &__item__type {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+    &__item__list {
+      font-size: 1.4rem;
+    }
+  }
 }
 //  Mobile
 @media (max-width: 739px) {
@@ -33,6 +43,17 @@
   .nav__list-mobile {
     margin-top: 20px;
   }
+  .skill-table {
+    margin-bottom: 20px;
+  }
+}
+
+// Moblie and Tablets
+
+@media screen and (max-width: 1023px) {
+  .hiddenOnMobileAndeTablet {
+    display: none;
+  }
   .intro-wrapper {
     height: 8rem;
     &__name {
@@ -46,13 +67,5 @@
       font-size: 3rem;
       line-height: 8rem;
     }
-  }
-}
-
-// Moblie and Tablets
-
-@media screen and (max-width: 1023px) {
-  .hiddenOnMobileAndeTablet {
-    display: none;
   }
 }

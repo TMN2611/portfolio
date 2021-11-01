@@ -54,9 +54,6 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 function Navigation({ handleToggle, handleToggleNav }) {
-  useEffect(() => {
-    console.log("nav re-render");
-  });
   return (
     <nav className="nav">
       <Link to="/" className="hiddenOnMobileAndeTablet">

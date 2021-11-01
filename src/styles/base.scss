@@ -3,8 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --background-color: #{variable.$LIGHT__BACKGROUND};
+  --background-color-20: #{variable.$LIGHT__BACKGROUND-20};
+
   --text-color: #{variable.$LIGHT__TEXT__COLOR};
-  --primary-color: #{variable.$LIGHT__PRIMARY};
+  --skill-text-header-color: #{variable.$LIGHT__SKILLTEXT__HEADER};
 
   --blue-color: #{variable.$BLUE};
   --red-color: #{variable.$RED};
@@ -25,7 +27,9 @@ html {
 }
 .dark-mode {
   --background-color: #{variable.$DARK__BACKGROUND};
-  --primary-color: #{variable.$DARK__PRIMARY};
+  --background-color-20: #{variable.$DARK__BACKGROUND-20};
+
+  --skill-text-header-color: #{variable.$DARK__SKILLTEXT__HEADER};
   --text-color: #{variable.$DARK__TEXT__COLOR};
 }
 /* width */
@@ -136,7 +140,7 @@ html {
     }
   }
   &-bars {
-    padding: 5px;
+    padding: 15px;
   }
   &-bars-icon {
     font-size: 2rem;
@@ -214,5 +218,33 @@ html {
   }
   to {
     opacity: 0;
+  }
+}
+
+@keyframes slide {
+  from {
+    top: 150%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes infiniteUpDown {
+  0% {
+    top: 0;
+    left: 50%;
+  }
+  30% {
+    top: 15%;
+    left: 60%;
+  }
+  60% {
+    top: 30%;
+    left: 40%;
+  }
+  100% {
+    top: 0;
+    left: 50%;
   }
 }

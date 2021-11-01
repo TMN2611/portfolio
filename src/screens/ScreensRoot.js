@@ -21,44 +21,6 @@ export default function App() {
   const modalNavBody = useRef();
   const modalNavOverlay = useRef();
 
-  const handleToggleNav = () => {
-    const modal = modalNav.current;
-    const body = modalNavBody.current;
-    const overlay = modalNavOverlay.current;
-
-    const isModalDisplay = modal.style.display;
-    console.log(isModalDisplay);
-    if (isModalDisplay === "none" || isModalDisplay === "") {
-      modal.style.display = "block";
-
-      setTimeout(() => {
-        body.style.left = 0;
-        overlay.style.animation = "fideIn 1s";
-      }, 0);
-    } else {
-      body.style.left = "-100%";
-      overlay.style.animation = "fideOut 1s";
-
-      setTimeout(() => {
-        modal.style.display = "none";
-      }, 1000);
-    }
-  };
-  useEffect(() => {
-    const overlay = modalNavOverlay.current;
-    overlay.addEventListener("click", handleToggleNav);
-
-    const navList = document.querySelectorAll(".modal-nav .nav__item");
-    navList.forEach((navItem) => {
-      navItem.addEventListener("click", handleToggleNav);
-    });
-    return () => {
-      navList.forEach((navItem) => {
-        navItem.removeEventListener("click", handleToggleNav);
-      });
-    };
-  }, []);
-
   // handle
   const handleToggle = useCallback(() => {
     const html = document.querySelector("html");
@@ -74,8 +36,44 @@ export default function App() {
       localStorage.removeItem("isDarkMode");
     }
   }, [isDarkMode]);
+  const handleToggleNav = () => {
+    const modal = modalNav.current;
+    const body = modalNavBody.current;
+    const overlay = modalNavOverlay.current;
 
+    const isModalDisplay = modal.style.display;
+    console.log(isModalDisplay);
+    if (isModalDisplay === "none" || isModalDisplay === "") {
+      modal.style.display = "block";
+
+      overlay.style.animation = "fideIn 1s";
+      setTimeout(() => {
+        body.style.left = 0;
+      }, 0);
+    } else {
+      body.style.left = "-100%";
+      overlay.style.animation = "fideOut 1s";
+
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 1000);
+    }
+  };
   // useEffect
+  useEffect(() => {
+    const overlay = modalNavOverlay.current;
+    overlay.addEventListener("click", handleToggleNav);
+
+    const navList = document.querySelectorAll(".modal-nav .nav__item");
+    navList.forEach((navItem) => {
+      navItem.addEventListener("click", handleToggleNav);
+    });
+    return () => {
+      navList.forEach((navItem) => {
+        navItem.removeEventListener("click", handleToggleNav);
+      });
+    };
+  }, []);
   useEffect(() => {
     const html = document.querySelector("html");
 
