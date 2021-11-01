@@ -48,7 +48,7 @@ export default function App() {
     const overlay = modalNavOverlay.current;
     overlay.addEventListener("click", handleToggleNav);
 
-    const navList = document.querySelectorAll(".nav__item");
+    const navList = document.querySelectorAll(".modal-nav .nav__item");
     navList.forEach((navItem) => {
       navItem.addEventListener("click", handleToggleNav);
     });

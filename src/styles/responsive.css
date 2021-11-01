@@ -34,6 +34,21 @@
   .nav__list-mobile {
     margin-top: 20px;
   }
+
+  .intro-wrapper {
+    height: 8rem;
+  }
+  .intro-wrapper__name {
+    font-size: 5rem;
+    line-height: 8rem;
+  }
+  .intro-wrapper__name img {
+    height: 6rem;
+  }
+  .intro-wrapper__major {
+    font-size: 3rem;
+    line-height: 8rem;
+  }
 }
 @media screen and (max-width: 1023px) {
   .hiddenOnMobileAndeTablet {

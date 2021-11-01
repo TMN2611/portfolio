@@ -33,6 +33,20 @@
   .nav__list-mobile {
     margin-top: 20px;
   }
+  .intro-wrapper {
+    height: 8rem;
+    &__name {
+      font-size: 5rem;
+      line-height: 8rem;
+      img {
+        height: 6rem;
+      }
+    }
+    &__major {
+      font-size: 3rem;
+      line-height: 8rem;
+    }
+  }
 }
 
 // Moblie and Tablets
