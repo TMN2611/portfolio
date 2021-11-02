@@ -94,7 +94,7 @@ function Navigation({ handleToggle, handleToggleNav }) {
         size="large"
         buttonTitle="Liên hệ"
         mainColor={COLOR.RED}
-        linkAdress={"/contact"}
+        linkRouterDom={"/contact"}
         classAdd={"hiddenOnMobileAndeTablet"}
       />
       <FormControlLabel

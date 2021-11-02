@@ -1,8 +1,9 @@
-import { React, useEffect, useState } from "react";
+import { memo, React, useEffect, useState } from "react";
 import RectangularButton from "../component/UI/Buttons/RectangularButton";
 import COLOR from "../contants/color";
 
-export default function HomeScreen({ urlSesstionImg }) {
+function HomeScreen({ urlSesstionImg }) {
+  console.log("render home");
   const [isSmall, setIsSmall] = useState(false);
   const handleZoomImage = (e) => {
     if (!isSmall) {
@@ -82,3 +83,4 @@ export default function HomeScreen({ urlSesstionImg }) {
     </div>
   );
 }
+export default memo(HomeScreen);

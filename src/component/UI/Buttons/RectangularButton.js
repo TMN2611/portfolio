@@ -5,15 +5,26 @@ export default function RectangularButton({
   buttonTitle,
   mainColor,
   linkAdress,
+  linkRouterDom,
   handleClick,
   classAdd,
 }) {
-  const Component = linkAdress ? Link : "button";
+  const Component = (() => {
+    if (linkRouterDom) {
+      return Link;
+    } else if (linkAdress) {
+      return "a";
+    } else {
+      return "button";
+    }
+  })();
+
   return (
     <Component
       className={`btn btn-${size} ${classAdd}`}
       style={{ borderColor: mainColor }}
-      to={linkAdress}
+      to={linkRouterDom}
+      href={linkAdress}
       onClick={handleClick}
     >
       {buttonTitle}

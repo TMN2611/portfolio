@@ -101,4 +101,17 @@
   font-weight: 300;
 }
 
+.section__contact--text {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.contact__btns {
+  display: flex;
+  flex-direction: column;
+}
+.contact__btn {
+  margin-bottom: 25px;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -21,6 +21,7 @@ const dataSkill = [
   },
 ];
 export default function SkillScreen() {
+  console.log("skill render");
   return (
     <div className="skill">
       <div className="section__title" style={{ justifyContent: "center" }}>

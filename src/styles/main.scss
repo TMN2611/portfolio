@@ -109,3 +109,17 @@
     }
   }
 }
+//  Contact page
+.section__contact--text {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+.contact {
+  &__btns {
+    display: flex;
+    flex-direction: column;
+  }
+  &__btn {
+    margin-bottom: 25px;
+  }
+}
