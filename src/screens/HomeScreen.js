@@ -76,7 +76,7 @@ function HomeScreen({ urlSesstionImg }) {
             size="large"
             buttonTitle="Liên hệ"
             mainColor={COLOR.RED}
-            linkAdress={"/contact"}
+            linkRouterDom={"/contact"}
           />
         </div>
       </div>

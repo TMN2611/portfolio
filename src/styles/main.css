@@ -1,6 +1,5 @@
 .home,
 .skill,
-.project,
 .contact {
   padding-bottom: 50px;
   overflow: hidden;
@@ -112,6 +111,75 @@
 }
 .contact__btn {
   margin-bottom: 25px;
+}
+
+.project {
+  --border-radius: 30px;
+}
+.project__preview, .project__introduction {
+  margin-bottom: 100px;
+}
+.project__preview-wrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project__lowerLayer {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background-color: var(--project-preview-lowerlayer-background);
+  transform: rotate(15deg);
+  border-radius: var(--border-radius);
+}
+.project__preview-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: var(--project-preview-background-color);
+  padding: 10px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--red-color);
+}
+.project__preview-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.project__introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 50px;
+}
+.project__index {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+.project__name {
+  display: block;
+  font-size: 6rem;
+  line-height: 6rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.project__description, .project__technologiesUsed {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.project__technologiesUsed {
+  margin-top: 20px;
+}
+.project__introduction::selection, .project__index::selection, .project__name::selection, .project__description::selection, .project__technologiesUsed::selection {
+  color: tomato;
+  background-color: black;
 }
 
 /*# sourceMappingURL=main.css.map */

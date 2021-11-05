@@ -22,6 +22,9 @@
       font-size: 1.4rem;
     }
   }
+  .project__preview-wrapper {
+    height: 400px;
+  }
 }
 //  Mobile
 @media (max-width: 739px) {
@@ -46,6 +49,9 @@
   .skill-table {
     margin-bottom: 20px;
   }
+  .project__preview-wrapper {
+    height: 350px;
+  }
 }
 
 // Moblie and Tablets
@@ -67,5 +73,13 @@
       font-size: 3rem;
       line-height: 8rem;
     }
+  }
+}
+
+// Pc low solution
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+  .project__preview-wrapper {
+    height: 400px;
   }
 }

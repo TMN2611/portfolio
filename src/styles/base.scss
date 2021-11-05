@@ -1,6 +1,6 @@
-@use "variable";
-@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@use 'variable';
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
   --background-color: #{variable.$LIGHT__BACKGROUND};
   --background-color-20: #{variable.$LIGHT__BACKGROUND-20};
@@ -12,6 +12,8 @@
   --red-color: #{variable.$RED};
   --gem-color: #{variable.$GEM};
   --github-color: #{variable.$GITHUB__COLOR};
+  --project-preview-background-color: #{variable.$PROJECT__PREVIEW__BACKGROUND};
+  --project-preview-lowerlayer-background: #{variable.$LIGHT__PROJECT__PREVIEW__LOWERLAYER__BACKGROUND};
 }
 
 * {
@@ -23,7 +25,7 @@ html {
   font-size: 62.5%;
   line-height: 16px;
   color: var(--text-color);
-  font-family: "Roboto", serif;
+  font-family: 'Roboto', serif;
   background-color: var(--background-color);
 }
 .dark-mode {
@@ -32,6 +34,7 @@ html {
 
   --skill-text-header-color: #{variable.$DARK__SKILLTEXT__HEADER};
   --text-color: #{variable.$DARK__TEXT__COLOR};
+  --project-preview-lowerlayer-background: #{variable.$DARK__PROJECT__PREVIEW__LOWERLAYER__BACKGROUND};
 }
 /* width */
 ::-webkit-scrollbar {
@@ -87,7 +90,7 @@ html {
     position: absolute;
     right: 0;
     top: 0;
-    content: "";
+    content: '';
     width: 0;
     height: 100%;
     background-color: var(--red-color);
@@ -156,7 +159,7 @@ html {
       position: absolute;
       top: calc(100%);
       left: 0;
-      content: "";
+      content: '';
       width: 0px;
       height: 1px;
       background-color: var(--blue-color);

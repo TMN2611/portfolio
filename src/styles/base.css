@@ -9,6 +9,8 @@
   --red-color: #ea4335;
   --gem-color: #08fdd8;
   --github-color: #4f4f4f;
+  --project-preview-background-color: #fef5ed00;
+  --project-preview-lowerlayer-background: #06050517;
 }
 
 * {
@@ -30,6 +32,7 @@ html {
   --background-color-20: #f0f2f53f;
   --skill-text-header-color: #fff8b5;
   --text-color: #f0f2f5;
+  --project-preview-lowerlayer-background: #f0f2f53f;
 }
 
 /* width */
