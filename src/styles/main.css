@@ -1,8 +1,8 @@
 .home,
 .skill,
-.contact {
-  padding-bottom: 50px;
-  overflow: hidden;
+.contact,
+.project {
+  padding-bottom: 150px;
 }
 
 .section__title {
@@ -33,6 +33,7 @@
   transform: translateX(-50%);
   animation: slide 2s cubic-bezier(0.19, 0.135, 0.15, 0.86);
   transition: all 0.6s cubic-bezier(0.19, 0.135, 0.15, 0.86);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .intro-wrapper {
@@ -129,8 +130,8 @@
 }
 .project__lowerLayer {
   position: absolute;
-  width: 90%;
-  height: 90%;
+  width: 85%;
+  height: 85%;
   background-color: var(--project-preview-lowerlayer-background);
   transform: rotate(15deg);
   border-radius: var(--border-radius);

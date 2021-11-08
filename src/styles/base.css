@@ -19,6 +19,10 @@
   padding: 0;
 }
 
+#root {
+  overflow: hidden;
+}
+
 html {
   font-size: 62.5%;
   line-height: 16px;

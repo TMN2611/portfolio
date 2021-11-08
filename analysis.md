@@ -32,3 +32,5 @@ Front-end : Html,css,javascript,Bootstrap, ReactJs, React Native, Firebase
 - Địa chỉ
 - Email
 - Số điện thoại
+- Zalo
+- Github
