@@ -39,6 +39,8 @@ export default function Project({ data }) {
               href={detailProjectLink}
               className='project__name'
               style={{ color: projectColor }}
+              target='_blank'
+              rel='noopener noreferrer'
             >
               {name}
             </a>

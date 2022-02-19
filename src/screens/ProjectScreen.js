@@ -12,11 +12,25 @@ const dataProjects = [
       'Bạn không biết tìm thợ ở đâu , tìm thợ đã khó tìm được thợ giỏi lại càng khó hơn,Thợ quen biết của bạn hẹn mãi không đến, giá cả quá cao mỗi lần đặt thợ truyền thống. Ứng dụng của chúng tôi sẽ giải quyết tất cả các vấn đề trên , bạn có thể gọi thợ mọi lúc mọi nơi, nhanh chóng, hiệu quả, tiện dụng với giá cả phải chăng,sẽ được bảo hành nếu có hư hỏng phát sinh',
     technologiesUsed: 'React Native, Firebase',
     projectColor: '#ff5230',
-    detailProjectLink: 'https://github.com/TMN2611/SonarApp',
+    detailProjectLink:
+      'https://drive.google.com/file/d/1WEPKeQGSI6zHk9U4_OBwm_9u8a6CW4RW/view?usp=sharing',
   },
   {
     id: 2,
     previewImgLink: '/images/previewImg2.png',
+    name: 'Sonar Partner App',
+    introduction:
+      'Ứng dụng đặt thợ , với tiêu chí nhanh chóng - tiện dụng - hiệu quả',
+    description:
+      'Bạn là thợ lành nghề, bạn muốn kết nối với hàng nghìn khách hàng bằng hình thức trực tuyến, tải app ngay',
+    technologiesUsed: 'React Native, Firebase',
+    projectColor: '#ff5230',
+    detailProjectLink:
+      'https://drive.google.com/file/d/1Avqcraypv13b-Q9VkdWF7JwIx1KOmjp-/view?usp=sharing',
+  },
+  {
+    id: 3,
+    previewImgLink: '/images/previewImg3.png',
     name: 'Shoes Store',
     introduction: 'Giao diện trang web bán giày chính hảng',
     description:
@@ -24,6 +38,26 @@ const dataProjects = [
     technologiesUsed: 'Html, css, javascript',
     projectColor: '#ffd141',
     detailProjectLink: 'https://tmn2611.github.io/Shoes-Store/',
+  },
+  {
+    id: 4,
+    previewImgLink: '/images/previewImg4.png',
+    name: 'Covid19 Langding Page',
+    introduction: 'Giao diện trên trang figma store langding page miễn phí',
+    description: 'Giao diện được chuyển đổi từ file Figma sang Html css',
+    technologiesUsed: 'Html, scss, javascript',
+    projectColor: '#FA5652',
+    detailProjectLink: 'https://tmn2611.github.io/Covid19/',
+  },
+  {
+    id: 5,
+    previewImgLink: '/images/previewImg5.png',
+    name: 'LaslesVPN',
+    introduction: 'Giao diện trên trang figma store langding page miễn phí',
+    description: 'Giao diện được chuyển đổi từ file Figma sang Html css',
+    technologiesUsed: 'Html, scss, javascript',
+    projectColor: '#F53838',
+    detailProjectLink: 'https://tmn2611.github.io/LaslesVPN/',
   },
 ];
 export default function ProjectScreen() {
