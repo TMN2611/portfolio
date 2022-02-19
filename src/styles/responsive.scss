@@ -31,7 +31,8 @@
   .hiddenOnMobile {
     display: none;
   }
-  .displayOnMobile {
+  .section__title {
+    margin-top: 40px;
   }
   #root {
     padding: 0 15px;
@@ -51,6 +52,12 @@
   }
   .project__preview-wrapper {
     height: 350px;
+  }
+  .project__preview {
+    margin-bottom: 10px;
+  }
+  .project__introduction {
+    padding-top: 10px;
   }
 }
 
