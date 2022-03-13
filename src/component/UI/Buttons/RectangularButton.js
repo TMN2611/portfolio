@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 export default function RectangularButton({
-  size = "normal",
+  size = 'normal',
   buttonTitle,
   mainColor,
   linkAdress,
@@ -13,9 +13,9 @@ export default function RectangularButton({
     if (linkRouterDom) {
       return Link;
     } else if (linkAdress) {
-      return "a";
+      return 'a';
     } else {
-      return "button";
+      return 'button';
     }
   })();
 
@@ -26,6 +26,7 @@ export default function RectangularButton({
       to={linkRouterDom}
       href={linkAdress}
       onClick={handleClick}
+      target='_blank'
     >
       {buttonTitle}
     </Component>
