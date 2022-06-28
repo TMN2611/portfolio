@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import RectangularButton from '../component/UI/Buttons/RectangularButton';
 
-export default function Project({ data }) {
+export default function Project({ data ,index}) {
   const {
     id,
     previewImgLink,
@@ -34,7 +34,7 @@ export default function Project({ data }) {
       <div className='col c-12 md-6 l-6'>
         <div className='project__introduction'>
           <div>
-            <p className='project__index'>Dự án số {id}</p>
+            <p className='project__index'>Dự án số {index + 1}</p>
             <a
               href={detailProjectLink}
               className='project__name'

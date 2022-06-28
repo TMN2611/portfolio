@@ -92,7 +92,7 @@ export default function ProjectScreen() {
         </div>
         <div className='row'>
           {dataProjects.map((project,index) => {
-            return <Project key={index} data={project} />;
+            return <Project key={index} data={project} index={index} />;
           })}
         </div>
       </div>
