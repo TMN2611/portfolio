@@ -12,11 +12,11 @@ const dataSkill = [
       { type: 'Language', list: 'Html, css, Javascript, Sass' },
       {
         type: 'Library, Framework',
-        list: 'React, React Native',
+        list: 'React, Nodejs',
       },
       { type: 'Source Management', list: 'Git, Github' },
 
-      { type: 'Database', list: 'Firebase Firestore' },
+      { type: 'Database', list: 'MongoDB' },
     ],
   },
 ];

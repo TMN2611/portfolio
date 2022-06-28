@@ -3,7 +3,18 @@ import Project from '../component/Project';
 
 const dataProjects = [
   {
-    id: 1,
+    
+    previewImgLink: '/images/bsclauchpad.png',
+    name: 'Bsclauchpad',
+    introduction: 'Giao diện trang web bán giày chính hảng',
+    description:
+      'Dự án này được lấy toàn bộ ý tưởng và giao diện ở trang https://bscpad.com/',
+    technologiesUsed: 'ReactJS, React-router-dom, Redux',
+    projectColor: '#ffd141',
+    detailProjectLink: 'https://bsclauchpad-chi.vercel.app/',
+  },
+  {
+    
     previewImgLink: '/images/previewImgQuaTet.png',
     name: 'Quà tết',
     introduction: 'Giao diện trang web bán giày chính hảng',
@@ -14,7 +25,7 @@ const dataProjects = [
     detailProjectLink: 'https://quatetorion.vercel.app/',
   },
   {
-    id: 3,
+    
     previewImgLink: '/images/previewImg3.png',
     name: 'Shoes Store',
     introduction: 'Giao diện trang web bán giày chính hảng',
@@ -25,7 +36,7 @@ const dataProjects = [
     detailProjectLink: 'https://tmn2611.github.io/Shoes-Store/',
   },
   {
-    id: 4,
+    
     previewImgLink: '/images/previewImg4.png',
     name: 'Covid19 ',
     introduction: 'Giao diện trên trang figma store langding page miễn phí',
@@ -35,7 +46,7 @@ const dataProjects = [
     detailProjectLink: 'https://tmn2611.github.io/Covid19/',
   },
   {
-    id: 5,
+    
     previewImgLink: '/images/previewImg5.png',
     name: 'LaslesVPN',
     introduction: 'Giao diện trên trang figma store langding page miễn phí',
@@ -45,7 +56,7 @@ const dataProjects = [
     detailProjectLink: 'https://tmn2611.github.io/LaslesVPN/',
   },
   {
-    id: 1,
+    
     previewImgLink: '/images/previewImg1.png',
     name: 'Sonar App',
     introduction:
@@ -58,7 +69,7 @@ const dataProjects = [
       'https://drive.google.com/file/d/1WEPKeQGSI6zHk9U4_OBwm_9u8a6CW4RW/view?usp=sharing',
   },
   {
-    id: 2,
+    
     previewImgLink: '/images/previewImg2.png',
     name: 'Sonar Partner App',
     introduction:
@@ -80,8 +91,8 @@ export default function ProjectScreen() {
           <h3>Dự án</h3>
         </div>
         <div className='row'>
-          {dataProjects.map((project) => {
-            return <Project key={project.id} data={project} />;
+          {dataProjects.map((project,index) => {
+            return <Project key={index} data={project} />;
           })}
         </div>
       </div>

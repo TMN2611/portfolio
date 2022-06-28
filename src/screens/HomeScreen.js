@@ -55,7 +55,7 @@ function HomeScreen({ urlSesstionImg }) {
                   </h3>
                 </div>
                 <div className='intro-wrapper'>
-                  <h3 className='intro-wrapper__major'>Intern Front-end</h3>
+                  <h3 className='intro-wrapper__major'>Fresher Front-end</h3>
                 </div>
               </div>
             </div>
